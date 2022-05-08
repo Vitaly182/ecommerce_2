@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {mobile} from '../responsive'
 
 const Container = styled.div`
     width: 100vw;
@@ -9,13 +10,14 @@ const Container = styled.div`
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
 `
 
 const Wrapper = styled.div`
     width: 25%;
     padding: 20px;
     background-color: white;
+    ${mobile({ width: '75%'})}
 `
 
 const Title = styled.h1`
